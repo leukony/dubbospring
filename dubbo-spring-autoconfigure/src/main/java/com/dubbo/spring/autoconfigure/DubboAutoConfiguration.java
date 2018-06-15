@@ -86,24 +86,4 @@ public class DubboAutoConfiguration {
         }
         return consumerConfig;
     }
-
-    @Primary
-    @Bean
-    public ModuleConfig createModuleConfig() {
-        ModuleConfig moduleConfig = dubboProperties.getModule();
-        if (moduleConfig == null) {
-            moduleConfig = new ModuleConfig();
-        }
-        return moduleConfig;
-    }
-
-    @Primary
-    @Bean
-    public MethodConfig createMethodConfig() {
-        MethodConfig methodConfig = dubboProperties.getMethod();
-        if (methodConfig == null) {
-            methodConfig = new MethodConfig();
-        }
-        return methodConfig;
-    }
 }

@@ -39,12 +39,6 @@ public class DubboProperties {
     /** 服务消费方配置 */
     private ConsumerConfig     consumer;
 
-    /** 模块配置 */
-    private ModuleConfig       module;
-
-    /** 方法配置 */
-    private MethodConfig       method;
-
     /** Dubbo接口扫描路径 */
     private String             scan;
 
@@ -95,23 +89,7 @@ public class DubboProperties {
     public void setProvider(ProviderConfig provider) {
         this.provider = provider;
     }
-
-    public ModuleConfig getModule() {
-        return module;
-    }
-
-    public void setModule(ModuleConfig module) {
-        this.module = module;
-    }
-
-    public MethodConfig getMethod() {
-        return method;
-    }
-
-    public void setMethod(MethodConfig method) {
-        this.method = method;
-    }
-
+    
     public ConsumerConfig getConsumer() {
         return consumer;
     }
